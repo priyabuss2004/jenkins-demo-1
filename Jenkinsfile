@@ -18,6 +18,7 @@ pipeline {
             steps {
                 sh """
                        echo "-------------Building Application------------------"
+                       cd java-project
                        mvn clean package
                        echo "-------------Application Built Successfully---------"
                 """
